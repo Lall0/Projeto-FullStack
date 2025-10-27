@@ -1,0 +1,50 @@
+----------------------------------------------------------------
+
+ARQUIVO PRINCIPAL DE IGNORE (NA RAIZ DO REPOSITÓRIO)
+
+----------------------------------------------------------------
+
+1. Dependências Geradas (Ignora as node_modules de ambas as pastas)
+
+api/node_modules/
+frontend/node_modules/
+
+2. Variáveis de Ambiente e Arquivos de Configuração Sensíveis
+
+api/.env
+frontend/.env
+*.local
+
+3. Logs e Arquivos de Debug
+
+logs/           # Ignora o diretório 'logs'
+*.log          # Ignora qualquer arquivo .log (geral)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+4. Saídas de Build e Diretórios Temporários
+
+Isso inclui a pasta 'dist' que o React ou Node podem gerar
+
+api/dist
+frontend/dist
+frontend/dist-ssr
+frontend/build
+dist
+dist-ssr
+/generated/prisma  # Específico do Prisma (muito importante ignorar o cliente gerado)
+
+5. Diretórios e Arquivos de Editor (VS Code, JetBrains, etc.)
+
+.vscode/*
+!.vscode/extensions.json # Manter este arquivo para configurações de extensão
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
